@@ -19,7 +19,7 @@ export function Safety() {
         <div className="flex items-center mb-24 relative">
           <div className="w-1/2 pr-12 flex flex-col items-end">
             <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#00795F] mb-3 text-right">Des cuisiniers formés et accompagnés</h3>
-            <p className="text-lg md:text-xl text-[#053126]/80 max-w-lg text-right">Nous guidons chaque chef dans l’apprentissage des bonnes pratiques d’hygiène et de sécurité, en toute simplicité.</p>
+            <p className="text-lg md:text-xl font-blatant text-[#053126]/80 max-w-lg text-right">Nous guidons chaque chef dans l’apprentissage des bonnes pratiques d’hygiène et de sécurité, en toute simplicité.</p>
           </div>
           <div className="w-1/2 flex items-center pl-12">
             <span className="ml-8 w-16 h-16 rounded-full bg-[#00795F] flex items-center justify-center text-white font-bold text-2xl shadow-xl border-4 border-white ring-4 ring-[#A1B864]/30 z-10">1</span>
@@ -32,14 +32,14 @@ export function Safety() {
           </div>
           <div className="w-1/2 pl-12 flex flex-col items-start">
             <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#F4B73E] mb-3 text-left">Un badge de confiance</h3>
-            <p className="text-lg md:text-xl text-[#053126]/80 max-w-lg text-left">Les profils certifiés “Hygiène alimentaire” sont vérifiés et clairement identifiés sur la plateforme.</p>
+            <p className="text-lg md:text-xl font-blatant text-[#053126]/80 max-w-lg text-left">Les profils certifiés “Hygiène alimentaire” sont vérifiés et clairement identifiés sur la plateforme.</p>
           </div>
         </div>
         {/* Bloc 3 */}
         <div className="flex items-center relative">
           <div className="w-1/2 pr-12 flex flex-col items-end">
             <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#00795F] mb-3 text-right">Des retours transparents</h3>
-            <p className="text-lg md:text-xl text-[#053126]/80 max-w-lg text-right">Les avis des utilisateurs contribuent à garantir la qualité et la fiabilité de chaque expérience.</p>
+            <p className="text-lg md:text-xl font-blatant text-[#053126]/80 max-w-lg text-right">Les avis des utilisateurs contribuent à garantir la qualité et la fiabilité de chaque expérience.</p>
           </div>
           <div className="w-1/2 flex items-center pl-12">
             <span className="ml-8 w-16 h-16 rounded-full bg-[#00795F] flex items-center justify-center text-white font-bold text-2xl shadow-xl border-4 border-white ring-4 ring-[#A1B864]/30 z-10">3</span>
