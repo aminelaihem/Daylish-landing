@@ -22,8 +22,16 @@ export function TwoWays() {
               <p className="text-lg text-[#053126]/80 font-blatant leading-relaxed mb-8 text-left">Laissez-vous surprendre par des recettes authentiques cuisinées par des passionnés près de chez vous. Commandez en quelques clics.</p>
             </div>
             <div className="flex justify-end">
-              <Link href="/explore" className="inline-block px-6 py-3 rounded-[12px] text-[#00795F] font-blatant font-bold border-2 border-[#00795F] bg-white hover:bg-[#00795F] hover:text-white transition-all duration-300 text-center">
-                Découvrir la plateforme
+              <Link
+                href="/explore"
+                style={{
+                  border: '2px solid transparent',
+                  background: 'linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #A1B864, #00795F) border-box'
+                }}
+                className="inline-flex items-center px-6 py-3 rounded-[12px] text-[#00795F] font-blatant font-bold transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:shadow-[#A1B864]/20 hover:bg-[#A1B864]/10 active:scale-[0.98] relative overflow-hidden"
+              >
+                <span className="relative z-10">Découvrir la plateforme</span>
+                <span className="absolute left-0 top-0 w-full h-full pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-300" style={{background: 'linear-gradient(120deg,rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0.2) 100%)', mixBlendMode: 'lighten'}}></span>
               </Link>
             </div>
           </div>
@@ -34,8 +42,16 @@ export function TwoWays() {
               <p className="text-lg text-[#053126]/80 font-blatant leading-relaxed mb-8 text-left">Rejoignez une communauté de chefs passionnés et commencez à vendre vos plats faits maison simplement et en toute sécurité.</p>
             </div>
             <div className="flex justify-end">
-              <Link href="/chef-registration" className="inline-block px-6 py-3 rounded-[12px] text-[#F4B73E] font-blatant font-bold border-2 border-[#F4B73E] bg-white hover:bg-[#F4B73E] hover:text-white transition-all duration-300 text-center">
-                Devenir chef partenaire
+              <Link
+                href="/chef-registration"
+                style={{
+                  border: '2px solid transparent',
+                  background: 'linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #F4B73E, #FFD580) border-box'
+                }}
+                className="inline-flex items-center px-6 py-3 rounded-[12px] text-[#F4B73E] font-blatant font-bold transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg hover:shadow-[#F4B73E]/20 hover:bg-[#F4B73E]/10 active:scale-[0.98] relative overflow-hidden"
+              >
+                <span className="relative z-10">Devenir chef partenaire</span>
+                <span className="absolute left-0 top-0 w-full h-full pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-300" style={{background: 'linear-gradient(120deg,rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0.2) 100%)', mixBlendMode: 'lighten'}}></span>
               </Link>
             </div>
           </div>
