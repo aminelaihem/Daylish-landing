@@ -8,7 +8,7 @@ export function Safety() {
           Votre sécurité, notre priorité
           <span className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-[#A1B864] rounded-full" />
         </h2>
-        <p className="mt-10 text-2xl md:text-3xl text-[#053126]/80 font-blatant max-w-4xl mx-auto leading-relaxed">
+        <p className="mt-10 text-xl md:text-2xl text-[#053126]/80 font-blatant max-w-4xl mx-auto leading-relaxed">
           Chez Daylish, nous mettons tout en œuvre pour garantir la qualité et la sécurité de chaque repas. Grâce à des bonnes pratiques d’hygiène, une sélection rigoureuse des cuisiniers et un accompagnement continu, vous pouvez savourer en toute confiance.
         </p>
       </div>
@@ -32,7 +32,7 @@ export function Safety() {
           </div>
           <div className="w-1/2 pl-12 flex flex-col items-start">
             <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#F4B73E] mb-3 text-left">Un badge de confiance</h3>
-            <p className="text-lg md:text-xl font-blatant text-[#053126]/80 max-w-lg text-left">Les profils certifiés “Hygiène alimentaire” sont vérifiés et clairement identifiés sur la plateforme.</p>
+            <p className="text-lg md:text-xl font-blatant text-[#053126]/80 max-w-lg text-left">Les profils certifiés "Hygiène alimentaire" sont vérifiés et clairement identifiés sur la plateforme.</p>
           </div>
         </div>
         {/* Bloc 3 */}
@@ -52,19 +52,19 @@ export function Safety() {
         <div className="flex flex-col items-center">
           <span className="w-14 h-14 rounded-full bg-[#00795F] flex items-center justify-center text-white font-bold text-xl shadow-xl border-4 border-white ring-4 ring-[#A1B864]/30 mb-4">1</span>
           <h3 className="text-xl font-blatant font-bold text-[#00795F] mb-2 text-center">Des cuisiniers formés et accompagnés</h3>
-          <p className="text-base text-[#053126]/80 text-center max-w-xs">Nous guidons chaque chef dans l’apprentissage des bonnes pratiques d’hygiène et de sécurité, en toute simplicité.</p>
+          <p className="text-base font-blatant text-[#053126]/80 text-center max-w-xs">Nous guidons chaque chef dans l'apprentissage des bonnes pratiques d'hygiène et de sécurité, en toute simplicité.</p>
         </div>
         {/* Pilier 2 */}
         <div className="flex flex-col items-center">
           <span className="w-14 h-14 rounded-full bg-[#F4B73E] flex items-center justify-center text-white font-bold text-xl shadow-xl border-4 border-white ring-4 ring-[#F4B73E]/30 mb-4">2</span>
           <h3 className="text-xl font-blatant font-bold text-[#F4B73E] mb-2 text-center">Un badge de confiance</h3>
-          <p className="text-base text-[#053126]/80 text-center max-w-xs">Les profils certifiés “Hygiène alimentaire” sont vérifiés et clairement identifiés sur la plateforme.</p>
+          <p className="text-base font-blatant text-[#053126]/80 text-center max-w-xs">Les profils certifiés "Hygiène alimentaire" sont vérifiés et clairement identifiés sur la plateforme.</p>
         </div>
         {/* Pilier 3 */}
         <div className="flex flex-col items-center">
           <span className="w-14 h-14 rounded-full bg-[#00795F] flex items-center justify-center text-white font-bold text-xl shadow-xl border-4 border-white ring-4 ring-[#A1B864]/30 mb-4">3</span>
           <h3 className="text-xl font-blatant font-bold text-[#00795F] mb-2 text-center">Des retours transparents</h3>
-          <p className="text-base text-[#053126]/80 text-center max-w-xs">Les avis des utilisateurs contribuent à garantir la qualité et la fiabilité de chaque expérience.</p>
+          <p className="text-base font-blatant text-[#053126]/80 text-center max-w-xs">Les avis des utilisateurs contribuent à garantir la qualité et la fiabilité de chaque expérience.</p>
         </div>
       </div>
     </section>
