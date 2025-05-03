@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Benefits } from "@/components/Benefits"
+import { TwoWays } from "@/components/TwoWays"
 
 export default function Home() {
   return (
@@ -59,7 +60,7 @@ export default function Home() {
         <div className="absolute left-0 right-0 bg-[#4a9c82] py-3 mt-4">
           <div className="relative flex overflow-hidden whitespace-nowrap">
             <div className="animate-marquee flex">
-              {Array(6)
+              {Array(7)
                 .fill(0)
                 .map((_, index) => (
                   <span key={index} className="text-white font-blatant font-bold text-xl mx-4">
@@ -68,7 +69,7 @@ export default function Home() {
                 ))}
             </div>
             <div className="animate-marquee2 flex absolute top-0 left-0">
-              {Array(6)
+              {Array(7)
                 .fill(0)
                 .map((_, index) => (
                   <span key={index} className="text-white font-blatant font-bold text-xl mx-4">
@@ -81,6 +82,7 @@ export default function Home() {
 
         {/* Benefits Section */}
         <Benefits />
+        <TwoWays />
       </main>
     </>
   )
