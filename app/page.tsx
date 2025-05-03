@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Benefits } from "@/components/Benefits"
 import { TwoWays } from "@/components/TwoWays"
+import { Safety } from "@/components/Safety"
 
 export default function Home() {
   return (
@@ -83,6 +84,7 @@ export default function Home() {
         {/* Benefits Section */}
         <Benefits />
         <TwoWays />
+        <Safety />
       </main>
     </>
   )
