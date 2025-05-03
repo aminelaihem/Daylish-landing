@@ -52,7 +52,7 @@ export function Benefits() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#053126]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Icone avec animation */}
-              <div className="flex-shrink-0 inline-flex p-5 bg-[#053126]/10 rounded-full transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+              <div className="flex-shrink-0 inline-flex p-5 bg-gradient-to-br from-[#F4B73E]/20 to-[#A1B864]/20 rounded-full transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
                 {benefit.icon}
               </div>
               
