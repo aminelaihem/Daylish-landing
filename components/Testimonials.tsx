@@ -57,7 +57,7 @@ const borderColors = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="pb-24 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 relative">
         <div className="text-center mb-20">
           <h2 className="text-5xl sm:text-6xl font-pique text-[#053126] relative inline-block">
@@ -75,7 +75,7 @@ export function Testimonials() {
               className={`relative p-8 md:p-10 flex flex-col border-t-4 rounded-2xl bg-white shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] ${borderColors[index % borderColors.length]}`}
             >
               <p className="text-lg text-[#053126] font-blatant italic mb-6 flex-grow relative">
-                <span className="absolute -top-4 -left-4 text-6xl text-[#A1B864]/10 font-serif select-none">“</span>
+                <span className="absolute -top-4 -left-4 text-6xl text-[#A1B864]/10 font-serif select-none">"</span>
                 {testimonial.content}
               </p>
               <div className="mt-auto">
