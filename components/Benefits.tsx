@@ -26,6 +26,12 @@ export function Benefits() {
     }
   ];
 
+  const borderColors = [
+    '#F4B73E', // orange (carte 1)
+    '#4AC6A8', // turquoise (carte 2)
+    '#F4B73E'  // orange (carte 3)
+  ];
+
   return (
     <section className="py-24 relative overflow-hidden mt-12">
       {/* Effet de fond subtil */}
@@ -46,7 +52,14 @@ export function Benefits() {
           {benefitsData.map((benefit, index) => (
             <div
               key={index}
-              className="group relative p-8 md:p-10 bg-white rounded-xl flex items-start gap-6 border border-[#053126]/10"
+              className="relative p-8 md:p-10 bg-white rounded-xl flex items-start gap-6 shadow-[0_4px_24px_0_rgba(0,0,0,0.04)]"
+              style={{
+                borderTop: `4px solid ${borderColors[index % borderColors.length]}`,
+                borderLeft: `1.5px solid ${borderColors[index % borderColors.length]}`,
+                borderRight: `1.5px solid ${borderColors[index % borderColors.length]}`,
+                borderBottom: `1.5px solid ${borderColors[index % borderColors.length]}`,
+                boxSizing: 'border-box'
+              }}
             >
               {/* Effet de fond subtil */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#053126]/5 to-transparent rounded-xl" />
