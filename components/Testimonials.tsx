@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
       name: "Sophie L.",
       role: "chef",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
-      location: "Lyon 3ème"
+      location: "Paris 3ème"
     },
     rating: 5
   },
@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
       name: "Amina K.",
       role: "chef",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200",
-      location: "Marseille 8ème"
+      location: "Paris 8ème"
     },
     rating: 5
   }
