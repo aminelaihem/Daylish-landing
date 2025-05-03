@@ -21,7 +21,7 @@ export function TwoWays() {
               <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#00795F] mb-4 text-left">Découvrez des plats faits maison, près de chez vous</h3>
               <p className="text-lg text-[#053126]/80 font-blatant leading-relaxed mb-8 text-left">Laissez-vous surprendre par des recettes authentiques cuisinées par des passionnés près de chez vous. Commandez en quelques clics.</p>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end md:justify-end justify-center md:justify-end">
               <Link
                 href="/explore"
                 style={{
@@ -41,7 +41,7 @@ export function TwoWays() {
               <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#F4B73E] mb-4 text-left">Monétisez votre passion pour la cuisine à domicile</h3>
               <p className="text-lg text-[#053126]/80 font-blatant leading-relaxed mb-8 text-left">Rejoignez une communauté de chefs passionnés et commencez à vendre vos plats faits maison simplement et en toute sécurité.</p>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end md:justify-end justify-center md:justify-end">
               <Link
                 href="/chef-registration"
                 style={{
