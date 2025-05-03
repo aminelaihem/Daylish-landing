@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Benefits } from "@/components/Benefits"
 import { TwoWays } from "@/components/TwoWays"
 import { Safety } from "@/components/Safety"
+import { Testimonials } from "@/components/Testimonials"
 
 export default function Home() {
   return (
@@ -85,6 +86,7 @@ export default function Home() {
         <Benefits />
         <TwoWays />
         <Safety />
+        <Testimonials />
       </main>
     </>
   )
