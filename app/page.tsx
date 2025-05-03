@@ -53,31 +53,31 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
 
-      {/* Coming Soon Banner - en dehors du main pour 100% largeur */}
-      <div className="w-screen bg-[#4a9c82] py-3 overflow-x-hidden fixed left-0 bottom-0 z-50">
-        <div className="relative flex overflow-hidden whitespace-nowrap w-full">
-          <div className="animate-marquee flex">
-            {Array(6)
-              .fill(0)
-              .map((_, index) => (
-                <span key={index} className="text-white font-blatant font-bold text-xl mx-4">
-                  BIENTOT DISPONIBLE
-                </span>
-              ))}
-          </div>
-          <div className="animate-marquee2 flex absolute top-0 left-0">
-            {Array(6)
-              .fill(0)
-              .map((_, index) => (
-                <span key={index} className="text-white font-blatant font-bold text-xl mx-4">
-                  BIENTOT DISPONIBLE
-                </span>
-              ))}
+        {/* Coming Soon Banner */}
+        <div className="w-screen bg-[#4a9c82] py-3 mt-4 -ml-4 md:-ml-8">
+          <div className="relative flex overflow-hidden whitespace-nowrap">
+            <div className="animate-marquee flex">
+              {Array(6)
+                .fill(0)
+                .map((_, index) => (
+                  <span key={index} className="text-white font-blatant font-bold text-xl mx-4">
+                    BIENTOT DISPONIBLE
+                  </span>
+                ))}
+            </div>
+            <div className="animate-marquee2 flex absolute top-0 left-0">
+              {Array(6)
+                .fill(0)
+                .map((_, index) => (
+                  <span key={index} className="text-white font-blatant font-bold text-xl mx-4">
+                    BIENTOT DISPONIBLE
+                  </span>
+                ))}
+            </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }
