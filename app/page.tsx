@@ -1,12 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Benefits } from "@/components/Benefits"
 
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen bg-[#f9f6f1] px-4 md:px-8 overflow-x-hidden">
+      <main className="min-h-screen bg-[#f9f6f1] overflow-x-hidden">
         {/* Header */}
-        <header className="container mx-auto flex justify-center items-start">
+        <header className="container mx-auto px-4 md:px-8 flex justify-center items-start">
           <div className="w-32 md:w-40 flex justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 185" fill="none" className="w-full h-auto">
               <path d="M37.125 75.2933C53.9251 75.2933 64.0992 84.7559 64.0992 95.194C64.0992 104.025 57.9963 112.685 51.1055 116.413C50.7772 116.47 50.3832 116.47 50.0549 116.47C45.4604 116.47 40.4082 112.914 39.5545 110.678C48.481 105.917 53.7301 96.2268 54.5838 89.1151C53.7301 87.2233 51.3025 85.4445 46.314 84.8133C46.7737 85.6166 47.102 86.4182 47.102 87.2789C47.102 89.8593 45.92 92.2676 44.6744 94.6202C41.3932 100.814 38.4402 110.104 37.3239 116.47C33.6487 116.413 29.6452 113.431 28.5289 110.391C28.8572 104.714 32.2041 93.0152 34.96 85.215C33.5154 85.4445 32.2698 85.674 30.9565 85.674C26.1649 85.674 24 81.7165 24 78.3328C24 77.7016 24.0657 77.1278 24.197 76.5557C28.0692 75.695 32.3354 75.2933 37.125 75.2933Z" fill="#005248"/>
@@ -21,7 +22,7 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className="container mx-auto py-6 md:py-8 flex flex-col md:flex-row items-center">
+        <section className="container mx-auto px-4 md:px-8 py-6 md:py-8 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-6/12 mb-8 md:mb-0 flex justify-center">
             <Image
               src="/images/app-mockup.png"
@@ -55,7 +56,7 @@ export default function Home() {
         </section>
 
         {/* Coming Soon Banner */}
-        <div className="w-screen bg-[#4a9c82] py-3 mt-4 -ml-4 md:-ml-8">
+        <div className="absolute left-0 right-0 bg-[#4a9c82] py-3 mt-4">
           <div className="relative flex overflow-hidden whitespace-nowrap">
             <div className="animate-marquee flex">
               {Array(6)
@@ -77,6 +78,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Benefits Section */}
+        <Benefits />
       </main>
     </>
   )
