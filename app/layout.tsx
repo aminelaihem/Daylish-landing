@@ -10,8 +10,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Daylish - Découvrez des plats faits maison",
-  description: "L'application qui vous fait voyager tout en restant chez vous",
-    generator: 'v0.dev'
+  description: "L'application qui vous fait voyager tout en restant chez vous"
 }
 
 export default function RootLayout({
