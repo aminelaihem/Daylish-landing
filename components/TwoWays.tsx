@@ -37,7 +37,7 @@ export function TwoWays() {
             </div>
           </div>
           {/* Bloc Cuisiniers */}
-          <div className="bg-[#FFF9E6] rounded-xl p-10 flex flex-col justify-between shadow-md mt-8">
+          <div className="bg-[#FFF9E6] rounded-xl p-10 flex flex-col justify-between shadow-md mt-8 md:mt-0">
             <div>
               <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#F4B73E] mb-4 text-left">Monétisez votre passion pour la cuisine à domicile</h3>
               <p className="text-lg text-[#053126]/80 font-blatant leading-relaxed mb-8 text-left">Rejoignez une communauté de chefs passionnés et commencez à vendre vos plats faits maison simplement et en toute sécurité.</p>
