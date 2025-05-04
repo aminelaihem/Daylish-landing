@@ -40,12 +40,11 @@ export default function Home() {
           </div>
           <div className="w-full md:w-6/12 md:pl-12">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-pique italic font-black text-[#053126] mb-6">
-              Découvrez Daylish
+              Découvrez Day'lish
             </h1>
 
             <p className="text-lg text-gray-700 mb-8 text-[#053126] font-blatant" >
-              Découvrez le monde depuis votre canapé ! 🌍✨ Une expérience de voyage unique qui vous transporte instantanément aux quatre coins du globe, sans bouger de chez vous. Prêt à explorer ?
-            </p>
+              La première plateforme locale qui connecte les amoureux de la bonne cuisine. Commandez des plats faits maison près de chez vous, cuisinés avec passion par des particuliers. Frais, authentique, convivial : goûtez à l’expérience Day'lish.            </p>
             <div className="flex justify-center md:justify-start">
               <Link
                 href="https://daylish.vercel.app/"

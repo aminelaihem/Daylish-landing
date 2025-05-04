@@ -7,7 +7,7 @@ export function TwoWays() {
       <div className="container mx-auto px-4 md:px-8 relative">
         <div className="text-center mb-20">
           <h2 className="text-5xl sm:text-6xl font-pique text-[#053126] relative inline-block">
-            Deux façons de vivre l'expérience Daylish
+            Deux façons de vivre l'expérience Day'lish
             <span className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-[#F4B73E] rounded-full" />
           </h2>
           <p className="mt-8 text-xl md:text-2xl text-[#053126]/80 font-blatant max-w-3xl mx-auto leading-relaxed">
