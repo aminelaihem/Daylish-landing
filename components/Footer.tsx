@@ -3,6 +3,28 @@ import Link from 'next/link';
 import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 export function Footer() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80; // Ajustement pour la hauteur du header si nécessaire
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
+      // Ajout d'un effet de rebond subtil
+      element.style.transform = 'scale(1.02)';
+      element.style.transition = 'transform 0.3s ease-in-out';
+      setTimeout(() => {
+        element.style.transform = 'scale(1)';
+      }, 300);
+    }
+  };
+
   return (
     <footer className="w-full bg-[#f9f6e7] pt-0 pb-7 px-2 sm:px-4 select-none">
       {/* Séparateur dégradé */}
@@ -10,14 +32,33 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-0">
         {/* Navigation centrale */}
         <nav className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-[17px] font-blatant mb-6 md:mb-0 order-2 md:order-2 w-full md:w-auto">
-          <a href="#benefits" className="hover:text-[#F4B73E] transition-colors">Bénéfices</a>
-          <a href="#twoways" className="hover:text-[#09D6A3] transition-colors">Expérience</a>
-          <a href="#safety" className="hover:text-[#F4B73E] transition-colors">Sécurité</a>
-          <a href="#testimonials" className="hover:text-[#09D6A3] transition-colors">Avis</a>
-          <a href="#faq" className="hover:text-[#F4B73E] transition-colors">FAQ</a>
-          <a href="#newsletter" className="hover:text-[#09D6A3] transition-colors">Newsletter</a>
-          <Link href="/" className="hover:text-[#F4B73E] transition-colors">
+          <a href="#benefits" onClick={(e) => scrollToSection(e, 'benefits')} className="hover:text-[#F4B73E] transition-colors relative group">
+            Bénéfices
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F4B73E] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#twoways" onClick={(e) => scrollToSection(e, 'twoways')} className="hover:text-[#09D6A3] transition-colors relative group">
+            Expérience
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#09D6A3] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#safety" onClick={(e) => scrollToSection(e, 'safety')} className="hover:text-[#F4B73E] transition-colors relative group">
+            Sécurité
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F4B73E] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#testimonials" onClick={(e) => scrollToSection(e, 'testimonials')} className="hover:text-[#09D6A3] transition-colors relative group">
+            Avis
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#09D6A3] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')} className="hover:text-[#F4B73E] transition-colors relative group">
+            FAQ
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F4B73E] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#newsletter" onClick={(e) => scrollToSection(e, 'newsletter')} className="hover:text-[#09D6A3] transition-colors relative group">
+            Newsletter
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#09D6A3] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <Link href="/" className="hover:text-[#F4B73E] transition-colors relative group">
             Mentions légales
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F4B73E] transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </nav>
         {/* Contact, minimaliste et responsive */}
