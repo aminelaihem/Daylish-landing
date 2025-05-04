@@ -33,7 +33,7 @@ export function Benefits() {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden mt-12">
+    <section id="benefits" className="py-24 relative overflow-hidden mt-12">
       {/* Effet de fond subtil */}
       <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
       

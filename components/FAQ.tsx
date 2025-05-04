@@ -44,7 +44,7 @@ const faqs = [
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <section className="pb-24 relative overflow-hidden">
+    <section id="faq" className="pb-24 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 relative">
         <div className="text-center mb-20">
           <h2 className="text-5xl sm:text-6xl font-pique text-[#053126] relative inline-block">

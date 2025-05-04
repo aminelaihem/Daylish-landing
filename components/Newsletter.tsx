@@ -36,7 +36,7 @@ export function Newsletter() {
   };
 
   return (
-    <section className="w-full flex justify-center items-center pb-16">
+    <section id="newsletter" className="w-full flex justify-center items-center pb-16">
       <div className="w-[95%] max-w-[1400px] bg-[#09D6A3] rounded-2xl flex flex-col md:flex-row items-center px-8 md:px-12 py-12 gap-8 md:gap-0">
         {/* Titre */}
         <div className="flex-1 flex flex-col items-start justify-center mb-4 md:mb-0">
