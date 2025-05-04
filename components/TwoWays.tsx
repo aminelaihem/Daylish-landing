@@ -23,7 +23,8 @@ export function TwoWays() {
             </div>
             <div className="flex justify-end md:justify-end justify-center md:justify-end">
               <Link
-                href="/explore"
+                href="https://daylish.vercel.app/catalogue"
+                target="_blank"
                 style={{
                   border: '2px solid transparent',
                   background: 'linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #A1B864, #00795F) border-box'
@@ -43,7 +44,8 @@ export function TwoWays() {
             </div>
             <div className="flex justify-end md:justify-end justify-center md:justify-end">
               <Link
-                href="/chef-registration"
+                href="https://daylish.vercel.app/register"
+                target="_blank"
                 style={{
                   border: '2px solid transparent',
                   background: 'linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #F4B73E, #FFD580) border-box'

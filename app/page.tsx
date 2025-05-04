@@ -48,7 +48,8 @@ export default function Home() {
             </p>
             <div className="flex justify-center md:justify-start">
               <Link
-                href="#"
+                href="https://daylish.vercel.app/"
+                target="_blank"
                 style={{
                   border: '2px solid transparent',
                   background: 'linear-gradient(#f9f6f1, #f9f6f1) padding-box, linear-gradient(to right, #F4B73E, #A1B864, #00795F) border-box'
