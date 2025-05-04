@@ -4,6 +4,7 @@ import { Benefits } from "@/components/Benefits"
 import { TwoWays } from "@/components/TwoWays"
 import { Safety } from "@/components/Safety"
 import { Testimonials } from "@/components/Testimonials"
+import { FAQ } from "@/components/FAQ"
 
 export default function Home() {
   return (
@@ -87,6 +88,7 @@ export default function Home() {
         <TwoWays />
         <Safety />
         <Testimonials />
+        <FAQ />
       </main>
     </>
   )
