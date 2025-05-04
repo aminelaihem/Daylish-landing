@@ -16,7 +16,7 @@ export function Footer() {
           <a href="#testimonials" className="hover:text-[#09D6A3] transition-colors">Avis</a>
           <a href="#faq" className="hover:text-[#F4B73E] transition-colors">FAQ</a>
           <a href="#newsletter" className="hover:text-[#09D6A3] transition-colors">Newsletter</a>
-          <Link href="/mentions-legales" className="hover:text-[#F4B73E] transition-colors">
+          <Link href="/" className="hover:text-[#F4B73E] transition-colors">
             Mentions légales
           </Link>
         </nav>
