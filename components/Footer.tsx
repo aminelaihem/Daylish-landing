@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         </div>
         {/* Logo Daylish */}
-        <Link href="/" aria-label="Accueil Daylish" className="flex-shrink-0 group mb-6 md:mb-0 order-1 md:order-none">
+        <Link href="/" aria-label="Accueil Daylish" className="flex-shrink-0 group md:mb-0 order-1 md:order-none">
           <div className="relative w-20 h-20 flex items-center justify-center mx-auto md:mx-0">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 185" fill="none" className="w-20 h-auto drop-shadow-lg group-hover:scale-105 group-hover:rotate-[-6deg] transition-transform duration-300">
               <path d="M37.125 75.2933C53.9251 75.2933 64.0992 84.7559 64.0992 95.194C64.0992 104.025 57.9963 112.685 51.1055 116.413C50.7772 116.47 50.3832 116.47 50.0549 116.47C45.4604 116.47 40.4082 112.914 39.5545 110.678C48.481 105.917 53.7301 96.2268 54.5838 89.1151C53.7301 87.2233 51.3025 85.4445 46.314 84.8133C46.7737 85.6166 47.102 86.4182 47.102 87.2789C47.102 89.8593 45.92 92.2676 44.6744 94.6202C41.3932 100.814 38.4402 110.104 37.3239 116.47C33.6487 116.413 29.6452 113.431 28.5289 110.391C28.8572 104.714 32.2041 93.0152 34.96 85.215C33.5154 85.4445 32.2698 85.674 30.9565 85.674C26.1649 85.674 24 81.7165 24 78.3328C24 77.7016 24.0657 77.1278 24.197 76.5557C28.0692 75.695 32.3354 75.2933 37.125 75.2933Z" fill="#005248"/>
