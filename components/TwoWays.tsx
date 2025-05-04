@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function TwoWays() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden pb-16">
       <div className="container mx-auto px-4 md:px-8 relative">
         <div className="text-center mb-20">
           <h2 className="text-5xl sm:text-6xl font-pique text-[#053126] relative inline-block">
@@ -36,7 +36,7 @@ export function TwoWays() {
             </div>
           </div>
           {/* Bloc Cuisiniers */}
-          <div className="bg-[#FFF5E1] rounded-xl p-10 flex flex-col justify-between shadow-md">
+          <div className="bg-[#FFF9E6] rounded-xl p-10 flex flex-col justify-between shadow-md mt-8">
             <div>
               <h3 className="text-2xl md:text-3xl font-blatant font-bold text-[#F4B73E] mb-4 text-left">Monétisez votre passion pour la cuisine à domicile</h3>
               <p className="text-lg text-[#053126]/80 font-blatant leading-relaxed mb-8 text-left">Rejoignez une communauté de chefs passionnés et commencez à vendre vos plats faits maison simplement et en toute sécurité.</p>
