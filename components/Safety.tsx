@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Safety() {
   return (
-    <section className="container mx-auto px-4 md:px-8 py-24">
+    <section className="container mx-auto px-4 md:px-8 pb-24">
       <div className="text-center mb-20">
         <h2 className="text-5xl sm:text-6xl font-pique text-[#053126] relative inline-block">
           Votre sécurité, notre priorité
