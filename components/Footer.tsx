@@ -4,13 +4,36 @@ import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="w-full bg-[#f9f6e7] pt-0 pb-7 px-4 select-none">
+    <footer className="w-full bg-[#f9f6e7] pt-0 pb-7 px-2 sm:px-4 select-none">
       {/* Séparateur dégradé */}
       <div className="w-full h-[6px] bg-gradient-to-r from-[#F4B73E] via-[#09D6A3] to-[#A1B864] rounded-t-xl shadow-md mb-7" />
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-0">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-0">
+        {/* Navigation centrale */}
+        <nav className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-[17px] font-blatant mb-6 md:mb-0 order-2 md:order-none w-full md:w-auto">
+          <a href="#benefits" className="hover:text-[#F4B73E] transition-colors">Bénéfices</a>
+          <a href="#twoways" className="hover:text-[#09D6A3] transition-colors">Expérience</a>
+          <a href="#safety" className="hover:text-[#F4B73E] transition-colors">Sécurité</a>
+          <a href="#testimonials" className="hover:text-[#09D6A3] transition-colors">Avis</a>
+          <a href="#faq" className="hover:text-[#F4B73E] transition-colors">FAQ</a>
+          <a href="#newsletter" className="hover:text-[#09D6A3] transition-colors">Newsletter</a>
+        </nav>
+        {/* Contact, minimaliste et responsive */}
+        <div className="flex flex-col gap-1 font-blatant text-[15px] text-[#053126] min-w-[180px] items-center md:items-end order-3 md:order-none w-full md:w-auto">
+          <span className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end"><Mail className="w-4 h-4 opacity-70" /><a href="mailto:contact@daylish.fr" className="hover:text-[#F4B73E] transition-colors">contact@daylish.fr</a></span>
+          <span className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end"><Phone className="w-4 h-4 opacity-70" /><a href="tel:0123456789" className="hover:text-[#09D6A3] transition-colors">01 23 45 67 89</a></span>
+          <span className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end"><svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 15s5-5.228 5-8.333A5 5 0 1 0 3 6.667C3 9.772 8 15 8 15Z" stroke="#A1B864" strokeWidth="1.2"/><circle cx="8" cy="6.5" r="1.5" fill="#A1B864"/></svg>42 rue de la Cuisine, 75000 Paris</span>
+          <div className="flex gap-2 mt-2 justify-center md:justify-end w-full md:w-auto">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" className="bg-[#F4B73E]/20 hover:bg-[#F4B73E]/40 text-[#F4B73E] rounded-full p-2 transition-all shadow-sm group">
+              <Instagram className="w-5 h-5 group-hover:scale-125 group-hover:-rotate-6 transition-transform duration-300" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" className="bg-[#09D6A3]/20 hover:bg-[#09D6A3]/40 text-[#09D6A3] rounded-full p-2 transition-all shadow-sm group">
+              <Linkedin className="w-5 h-5 group-hover:scale-125 group-hover:rotate-6 transition-transform duration-300" />
+            </a>
+          </div>
+        </div>
         {/* Logo Daylish */}
-        <Link href="/" aria-label="Accueil Daylish" className="flex-shrink-0 group mb-6 md:mb-0">
-          <div className="relative w-20 h-20 flex items-center justify-center">
+        <Link href="/" aria-label="Accueil Daylish" className="flex-shrink-0 group mb-6 md:mb-0 order-1 md:order-none">
+          <div className="relative w-20 h-20 flex items-center justify-center mx-auto md:mx-0">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 185" fill="none" className="w-20 h-auto drop-shadow-lg group-hover:scale-105 group-hover:rotate-[-6deg] transition-transform duration-300">
               <path d="M37.125 75.2933C53.9251 75.2933 64.0992 84.7559 64.0992 95.194C64.0992 104.025 57.9963 112.685 51.1055 116.413C50.7772 116.47 50.3832 116.47 50.0549 116.47C45.4604 116.47 40.4082 112.914 39.5545 110.678C48.481 105.917 53.7301 96.2268 54.5838 89.1151C53.7301 87.2233 51.3025 85.4445 46.314 84.8133C46.7737 85.6166 47.102 86.4182 47.102 87.2789C47.102 89.8593 45.92 92.2676 44.6744 94.6202C41.3932 100.814 38.4402 110.104 37.3239 116.47C33.6487 116.413 29.6452 113.431 28.5289 110.391C28.8572 104.714 32.2041 93.0152 34.96 85.215C33.5154 85.4445 32.2698 85.674 30.9565 85.674C26.1649 85.674 24 81.7165 24 78.3328C24 77.7016 24.0657 77.1278 24.197 76.5557C28.0692 75.695 32.3354 75.2933 37.125 75.2933Z" fill="#005248"/>
               <path d="M79.9142 108.327C79.9142 107.753 79.9142 107.065 80.0456 106.321C78.1433 110.163 74.7287 116.529 72.4325 116.529C68.4289 115.84 65.0163 111.768 64.8193 107.583V106.78C64.8193 97.776 72.1041 88.6004 76.7643 88.0839C79.7172 88.6577 82.2125 90.6069 83.7208 92.8448C84.1148 91.1251 84.5088 89.0594 84.8371 87.2823C89.6943 87.5693 95.1405 90.0923 95.1405 94.8531C95.1405 98.409 92.4502 104.144 91.0712 107.126C94.2212 105.863 97.9621 103.627 99.4067 102.594C99.4067 107.011 94.1555 116.473 87.987 116.531C82.7358 116.416 79.9142 112.172 79.9142 108.331V108.327ZM82.6702 96.858C78.1413 99.7252 74.9914 104.486 73.4174 110.508C76.3703 108.558 79.7172 104.142 81.2932 101.217C81.6872 100.012 82.4095 97.8908 82.6721 96.858H82.6702Z" fill="#005248"/>
@@ -24,33 +47,6 @@ export function Footer() {
             <span className="absolute -inset-2 rounded-full bg-gradient-to-tr from-[#F4B73E]/20 via-[#09D6A3]/20 to-[#A1B864]/20 blur-md z-0 animate-pulse-slow" />
           </div>
         </Link>
-        {/* Navigation centrale */}
-        <nav className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-[17px] font-blatant mb-6 md:mb-0">
-          <a href="#benefits" className="hover:text-[#F4B73E] transition-colors">Bénéfices</a>
-          <a href="#twoways" className="hover:text-[#09D6A3] transition-colors">Expérience</a>
-          <a href="#safety" className="hover:text-[#F4B73E] transition-colors">Sécurité</a>
-          <a href="#testimonials" className="hover:text-[#09D6A3] transition-colors">Avis</a>
-          <a href="#faq" className="hover:text-[#F4B73E] transition-colors">FAQ</a>
-          <a href="#newsletter" className="hover:text-[#09D6A3] transition-colors">Newsletter</a>
-        </nav>
-        {/* Contact à droite, minimaliste */}
-        <div className="flex flex-col gap-1 font-blatant text-[15px] text-[#053126] min-w-[180px] items-end md:items-end">
-          <span className="flex items-center gap-2"><Mail className="w-4 h-4 opacity-70" /><a href="mailto:contact@daylish.fr" className="hover:text-[#F4B73E] transition-colors">contact@daylish.fr</a></span>
-          <span className="flex items-center gap-2"><Phone className="w-4 h-4 opacity-70" /><a href="tel:0123456789" className="hover:text-[#09D6A3] transition-colors">01 23 45 67 89</a></span>
-          <span className="flex items-center gap-2">
-            {/* Icône localisation */}
-            <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 15s5-5.228 5-8.333A5 5 0 1 0 3 6.667C3 9.772 8 15 8 15Z" stroke="#A1B864" strokeWidth="1.2"/><circle cx="8" cy="6.5" r="1.5" fill="#A1B864"/></svg>
-            42 rue de la Cuisine, 75000 Paris
-          </span>
-          <div className="flex gap-2 mt-1">
-            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" className="bg-[#F4B73E]/20 hover:bg-[#F4B73E]/40 text-[#F4B73E] rounded-full p-2 transition-all shadow-sm group">
-              <Instagram className="w-5 h-5 group-hover:scale-125 group-hover:-rotate-6 transition-transform duration-300" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" className="bg-[#09D6A3]/20 hover:bg-[#09D6A3]/40 text-[#09D6A3] rounded-full p-2 transition-all shadow-sm group">
-              <Linkedin className="w-5 h-5 group-hover:scale-125 group-hover:rotate-6 transition-transform duration-300" />
-            </a>
-          </div>
-        </div>
       </div>
       {/* Mentions légales & copyright */}
       <div className="flex flex-col md:flex-row items-center justify-between mt-6 gap-2 text-sm text-[#053126]/70">
