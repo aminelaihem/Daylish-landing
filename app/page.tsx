@@ -5,6 +5,7 @@ import { TwoWays } from "@/components/TwoWays"
 import { Safety } from "@/components/Safety"
 import { Testimonials } from "@/components/Testimonials"
 import { FAQ } from "@/components/FAQ"
+import { Newsletter } from "@/components/Newsletter"
 
 export default function Home() {
   return (
@@ -89,6 +90,7 @@ export default function Home() {
         <Safety />
         <Testimonials />
         <FAQ />
+        <Newsletter />
       </main>
     </>
   )
