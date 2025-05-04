@@ -9,7 +9,7 @@ export function Footer() {
       <div className="w-full h-[6px] bg-gradient-to-r from-[#F4B73E] via-[#09D6A3] to-[#A1B864] rounded-t-xl shadow-md mb-7" />
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-0">
         {/* Navigation centrale */}
-        <nav className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-[17px] font-blatant mb-6 md:mb-0 order-2 md:order-none w-full md:w-auto">
+        <nav className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-[17px] font-blatant mb-6 md:mb-0 order-2 md:order-2 w-full md:w-auto">
           <a href="#benefits" className="hover:text-[#F4B73E] transition-colors">Bénéfices</a>
           <a href="#twoways" className="hover:text-[#09D6A3] transition-colors">Expérience</a>
           <a href="#safety" className="hover:text-[#F4B73E] transition-colors">Sécurité</a>
@@ -18,7 +18,7 @@ export function Footer() {
           <a href="#newsletter" className="hover:text-[#09D6A3] transition-colors">Newsletter</a>
         </nav>
         {/* Contact, minimaliste et responsive */}
-        <div className="flex flex-col gap-1 font-blatant text-[15px] text-[#053126] min-w-[180px] items-center md:items-end order-3 md:order-none w-full md:w-auto">
+        <div className="flex flex-col gap-1 font-blatant text-[15px] text-[#053126] min-w-[180px] items-center md:items-end order-3 md:order-3 w-full md:w-auto">
           <span className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end"><Mail className="w-4 h-4 opacity-70" /><a href="mailto:contact@daylish.fr" className="hover:text-[#F4B73E] transition-colors">contact@daylish.fr</a></span>
           <span className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end"><Phone className="w-4 h-4 opacity-70" /><a href="tel:0123456789" className="hover:text-[#09D6A3] transition-colors">01 23 45 67 89</a></span>
           <span className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end"><svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 15s5-5.228 5-8.333A5 5 0 1 0 3 6.667C3 9.772 8 15 8 15Z" stroke="#A1B864" strokeWidth="1.2"/><circle cx="8" cy="6.5" r="1.5" fill="#A1B864"/></svg>42 rue de la Cuisine, 75000 Paris</span>
@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         </div>
         {/* Logo Daylish */}
-        <Link href="/" aria-label="Accueil Daylish" className="flex-shrink-0 group md:mb-0 order-1 md:order-none">
+        <Link href="/" aria-label="Accueil Daylish" className="flex-shrink-0 group md:mb-0 order-1 md:order-1">
           <div className="relative w-20 h-20 flex items-center justify-center mx-auto md:mx-0">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 185" fill="none" className="w-20 h-auto drop-shadow-lg group-hover:scale-105 group-hover:rotate-[-6deg] transition-transform duration-300">
               <path d="M37.125 75.2933C53.9251 75.2933 64.0992 84.7559 64.0992 95.194C64.0992 104.025 57.9963 112.685 51.1055 116.413C50.7772 116.47 50.3832 116.47 50.0549 116.47C45.4604 116.47 40.4082 112.914 39.5545 110.678C48.481 105.917 53.7301 96.2268 54.5838 89.1151C53.7301 87.2233 51.3025 85.4445 46.314 84.8133C46.7737 85.6166 47.102 86.4182 47.102 87.2789C47.102 89.8593 45.92 92.2676 44.6744 94.6202C41.3932 100.814 38.4402 110.104 37.3239 116.47C33.6487 116.413 29.6452 113.431 28.5289 110.391C28.8572 104.714 32.2041 93.0152 34.96 85.215C33.5154 85.4445 32.2698 85.674 30.9565 85.674C26.1649 85.674 24 81.7165 24 78.3328C24 77.7016 24.0657 77.1278 24.197 76.5557C28.0692 75.695 32.3354 75.2933 37.125 75.2933Z" fill="#005248"/>
